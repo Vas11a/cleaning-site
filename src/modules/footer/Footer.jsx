@@ -22,7 +22,7 @@ export default function Footer() {
 
     const animation2 = {
         hidden: {
-            x: -500,
+            x: -200,
             opacity: 0
         },
         visible: custom => ({
@@ -42,15 +42,15 @@ export default function Footer() {
             variants={animation2}
             whileInView='visible'
             custom={-0.5}
-            className="title  px-20 pt-8  text-main text-6xl py-5">Contacts</motion.h1>
-        <div className="flex items-center gap-20 justify-between pr-36 px-20 pt-10">
+            className="title px-5 md:px-20 pt-8  text-main text-4xl sm:text-5xl md:text-6xl py-5">Contacts</motion.h1>
+        <div className="flex items-center flex-wrap gap-5 lg:gap-20 justify-between pr-5 md:pr-36 px-5 md:px-20 pt-5 sm:pt-10">
             <motion.div 
             initial='hidden'
             variants={animation}
             whileInView='visible'
             custom={-0.5}
             className="flex flex-col gap-8">
-                <div className="flex gap-5 items-center ">
+                <div className="flex gap-5 items-center flex-wrap ">
                     <input type="text"
                         className="shadow-sm bg-gray-50 border border-teal-500  text-xl text-gray-900 relative z-10  rounded-lg focus:ring-main focus:border-teal-300 block p-2.5"
                         placeholder="+380 000 0000 00" />

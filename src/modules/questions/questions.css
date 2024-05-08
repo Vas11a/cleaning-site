@@ -1,6 +1,13 @@
 .questions{
-    background-image: url('../../assets/background.png');
+    background-image: url('../../assets/background.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
+}
+
+
+@media screen and (max-width: 640px) {
+    .questions{
+        background-image: none;
+    }
 }

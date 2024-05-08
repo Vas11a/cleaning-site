@@ -10,6 +10,13 @@ module.exports = {
       colors:{
         main: '#4eac99'
       },
+      width: {
+        '500': '500px',
+        '700': '700px',
+      },
+      height: {
+        '600': '600px',
+      },
       fontSize: {
         '4.5xl': '40px',
       }

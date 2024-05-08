@@ -6,6 +6,7 @@ import Reviews from './modules/reviews/Reviews'
 import Footer from './modules/footer/Footer'
 import Call from './modules/call/Call'
 import Services from './modules/services/Services'
+import Team from './modules/team/Team'
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Questions />
       </div>
       <Reviews />
+      <Team />
+      
       <Footer />
       <Call />
 
