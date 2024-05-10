@@ -3,6 +3,7 @@ import social1 from '../../assets/social1.svg'
 import social2 from '../../assets/social2.svg'
 import social3 from '../../assets/social3.svg'
 import { motion } from 'framer-motion';
+import Number from '../main/Number';
 
 export default function Footer() {
     const animation = {
@@ -50,15 +51,7 @@ export default function Footer() {
             whileInView='visible'
             custom={-0.5}
             className="flex flex-col gap-8">
-                <div className="flex gap-5 items-center flex-wrap ">
-                    <input type="text"
-                        className="shadow-sm bg-gray-50 border border-teal-500  text-xl text-gray-900 relative z-10  rounded-lg focus:ring-main focus:border-teal-300 block p-2.5"
-                        placeholder="+380 000 0000 00" />
-                    <button type="button"
-                        className="text-white text-xl relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg  px-5 py-2.5">Get
-                        in touch</button>
-                </div>
-
+                <Number/>
             </motion.div>
             <motion.div 
             initial='hidden'
