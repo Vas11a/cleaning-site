@@ -4,6 +4,7 @@ import Review from './Review';
 import { motion } from 'framer-motion'
 import back1 from '../../assets/back3.png'
 import back2 from '../../assets/back5.png'
+import back3 from '../../assets/back2.2.png'
 import './reviews.css'
 
 
@@ -45,13 +46,21 @@ export default function Reviews() {
                 transition={{ duration: 0.4 }} src={back1} className='absolute bottom-56 left-64 -rotate-45 w-32 opacity-50 h-auto' alt="" />
             <motion.img whileHover={{ rotate: 0 }} initial={{ rotate: 45 }}
                 transition={{ duration: 0.4 }} src={back2} className='absolute bottom-16 right-64 w-50 opacity-50  h-auto' alt="" />
+
+            <motion.img whileHover={{ rotate: 0 }} initial={{ rotate: 45 }}
+                transition={{ duration: 0.4 }} src={back3} className='absolute top-32 left-32 w-20 opacity-50  h-auto' alt="" />
+
+            <motion.img whileHover={{ rotate: 0 }} initial={{ rotate: 45 }}
+                transition={{ duration: 0.4 }} src={back3} className='absolute top-20 right-64 w-20 opacity-50  h-auto' alt="" />
+
+
             <div className='linegrad'></div>
             <motion.h1
                 initial='hidden'
                 variants={animation}
                 whileInView='visible'
                 custom={-0.5}
-                className="title px-5 md:px-20 pt-8  text-main text-4xl sm:text-5xl md:text-6xl py-5">Reviews</motion.h1>
+                className="title px-5 md:px-20 pt-8   text-main text-4xl sm:text-5xl md:text-6xl py-5">Reviews</motion.h1>
             <motion.div
                 initial='hidden'
                 variants={animation2}

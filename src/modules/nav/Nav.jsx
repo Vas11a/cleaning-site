@@ -5,12 +5,32 @@ import menu from '../../assets/menu.svg'
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+
+    const [hasScrolled, setHasScrolled] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = window.pageYOffset;
+            if (currentPosition > 0) {
+                setHasScrolled(true);
+            } else {
+                setHasScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <motion.nav
             initial={{ y: '-100vh' }}
             animate={{ y: 0 }}
             transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-            className=" border-gray-200 p-5 sm:p-7 bg-white fixed w-full top-0 pb-3  " style={{ zIndex: 100, }}>
+            className={`p-5 sm:p-7 bg-white fixed w-full top-0 pb-3 ${hasScrolled ? 'border-b border-main' : ''}`}
+         style={{ zIndex: 100, }}>
             <div className=" flex flex-wrap items-center justify-between mx-auto">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={logo} className="md:h-24 h-16" alt=" Logo" />
@@ -25,25 +45,25 @@ export default function Nav() {
                         <div className="flex flex-col md:flex-row gap-1 md:gap-10">
                             <li>
                                 <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">Home</a>
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">Home</a>
                             </li>
                             <li>
 
                                 <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">About</a>
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">About</a>
                             </li>
                             <li>
 
                                 <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">Services</a>
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">Services</a>
                             </li>
                             <li>
                                 <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">Pricing</a>
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main md:p-0 ">Pricing</a>
                             </li>
                         </div>
                         <button type="button"
-                            className="text-white relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg text-lg px-5 py-2.5">Button</button>
+                            className="text-white relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg text-lg xl:text-xl px-5 py-2.5">Button</button>
                     </ul>
                 </div>
             </div>

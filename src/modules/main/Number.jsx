@@ -46,7 +46,7 @@ export default function Number() {
 
             <div className='flex flex-wrap justify-center sm:justify-end gap-5 items-center pt-10"'>
 
-                <input onChange={e => setNumber(e.target.value)} value={number} type="text" className=" shadow-sm bg-gray-50 border border-teal-500 text-xl text-gray-900 relative z-10 rounded-lg focus:ring-main focus:border-teal-300 block p-2.5" placeholder="+380 000 0000 00" />
+                <input onChange={e => setNumber(e.target.value)} value={number} type="text" className=" shadow-sm bg-gray-50 border border-teal-500 text-xl xl:text-2xl text-gray-900 relative z-10 rounded-lg focus:ring-main focus:border-teal-300 block p-2.5" placeholder="+380 000 0000 00" />
 
                 {
                     isLoading && (
@@ -59,7 +59,7 @@ export default function Number() {
                     )
                 }
 
-                <button onClick={submitForm} type="button" className="text-white text-xl relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg px-5 py-2.5">Getin touch</button>
+                <button onClick={submitForm} type="button" className="text-white text-xl xl:text-2xl relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg px-5 py-2.5">Getin touch</button>
             </div>
         </>
     )

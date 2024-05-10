@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Pannel from './Pannel';
-import bubles1 from '../../assets/bubles1.jpg';
+import bubles1 from '../../assets/bubbles3.svg';
 import clean1 from '../../assets/clean1.jpeg';
 import clean2 from '../../assets/clean2.jpeg';
 import Service from './Service';
