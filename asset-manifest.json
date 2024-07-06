@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cleaning-site/static/css/main.55e417c3.css",
-    "main.js": "/cleaning-site/static/js/main.de5fac96.js",
+    "main.css": "/cleaning-site/static/css/main.29d09810.css",
+    "main.js": "/cleaning-site/static/js/main.491d1f66.js",
     "static/media/linda1.png": "/cleaning-site/static/media/linda1.fda272fda9badae29ef5.png",
     "static/media/linda2.png": "/cleaning-site/static/media/linda2.52a835d302c706d80661.png",
     "static/media/social8.webp": "/cleaning-site/static/media/social8.3de60a12e7c61f5e59f8.webp",
@@ -16,6 +16,7 @@
     "static/media/phone.svg": "/cleaning-site/static/media/phone.cfa7bc4a796f24ebfbbbf8148b68fe71.svg",
     "static/media/background.svg": "/cleaning-site/static/media/background.aef0eaaae1adb2b4399a.svg",
     "static/media/social1.svg": "/cleaning-site/static/media/social1.c034e91d8d94094a85de81b946c50f9a.svg",
+    "static/media/mark.svg": "/cleaning-site/static/media/mark.a810b4d3d35d0f42fedb10df4f6fb3a9.svg",
     "static/media/checkmark.svg": "/cleaning-site/static/media/checkmark.0af8dd9767cc912b0e611784f008ae3d.svg",
     "static/media/loca.svg": "/cleaning-site/static/media/loca.6def73ef80822fc43da431e1f6229560.svg",
     "static/media/rating.svg": "/cleaning-site/static/media/rating.2c2c23490fcfa3c6a315f229f9bc2a74.svg",
@@ -24,11 +25,11 @@
     "static/media/arrow.svg": "/cleaning-site/static/media/arrow.57977d8f5811c48b7da65ac806382eb9.svg",
     "index.html": "/cleaning-site/index.html",
     "static/media/menu.svg": "/cleaning-site/static/media/menu.0e5c0089d3d64040f2578adfd7ae9439.svg",
-    "main.55e417c3.css.map": "/cleaning-site/static/css/main.55e417c3.css.map",
-    "main.de5fac96.js.map": "/cleaning-site/static/js/main.de5fac96.js.map"
+    "main.29d09810.css.map": "/cleaning-site/static/css/main.29d09810.css.map",
+    "main.491d1f66.js.map": "/cleaning-site/static/js/main.491d1f66.js.map"
   },
   "entrypoints": [
-    "static/css/main.55e417c3.css",
-    "static/js/main.de5fac96.js"
+    "static/css/main.29d09810.css",
+    "static/js/main.491d1f66.js"
   ]
 }
