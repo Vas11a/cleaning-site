@@ -54,7 +54,7 @@ export default function Services() {
                 variants={animation}
                 whileInView='visible'
                 custom={-0.5}
-                className="title px-5 md:px-20 pt-8  text-main text-4xl sm:text-5xl md:text-6xl py-5">Services</motion.h1>
+                className="title px-5 md:px-20 pt-8  text-main text-4xl sm:text-5xl md:text-6xl py-5">Наші сервіси</motion.h1>
 
             <div className="flex flex-col  xl:flex-row justify-between relative " >
                 <img src={bubles1}
@@ -66,8 +66,8 @@ export default function Services() {
                     whileInView='visible'
                     custom={-0.4}
                     className="flex gap-5 w-full sm:w-fit md:gap-20">
-                        <Service setIsPannelOpen={handlePopup} />
-                        <Service setIsPannelOpen={handlePopup} />
+                        <Service title='Генеральне' text='' setIsPannelOpen={handlePopup} />
+                        <Service title='Домогосподарочка' text='' setIsPannelOpen={handlePopup} />
                     </motion.div>
                     <motion.div 
                     initial='hidden'
@@ -75,8 +75,8 @@ export default function Services() {
                     variants={animation}
                     custom={-0.3}
                     className="flex gap-5 w-full sm:w-fit md:gap-20">
-                        <Service setIsPannelOpen={handlePopup} />
-                        <Service setIsPannelOpen={handlePopup} />
+                        <Service title='Після ремонту' text='' setIsPannelOpen={handlePopup} />
+                        <Service title='Разове підтримуюче' text='' setIsPannelOpen={handlePopup} />
                     </motion.div>
                     <motion.div 
                     initial='hidden'
@@ -84,8 +84,8 @@ export default function Services() {
                     variants={animation}
                     custom={-0.2}
                     className="flex w-full sm:w-fit gap-5 md:gap-20">
-                        <Service setIsPannelOpen={handlePopup} />
-                        <Service setIsPannelOpen={handlePopup} />
+                        <Service title='Пасля квартирантів' text='' setIsPannelOpen={handlePopup} />
+                        <Service title='Хімчистка' text='' setIsPannelOpen={handlePopup} />
                     </motion.div>
                 </div>
 

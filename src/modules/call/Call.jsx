@@ -2,10 +2,12 @@ import React from 'react'
 import social4 from '../../assets/social4.png'
 import social5 from '../../assets/social5.webp'
 import social7 from '../../assets/social7.webp'
+import social8 from '../../assets/social8.webp'
 import phone from '../../assets/phone.svg'
 
 export default function Call() {
   const [isOpen, setIsOpen] = React.useState(false)
+  
   return (
     
     <div className="floatingButton flex gap-3 sm:gap-7 items-center">
@@ -15,7 +17,7 @@ export default function Call() {
             <div className="flex gap-3">
                 <img src={social4}  className="w-8 rounded-full h-auto" alt=""/>
                 <img  src={social5}  className="w-8 rounded-full h-auto" alt=""/>
-                <img  src={social5}  className="w-8 rounded-full h-auto" alt=""/>
+                <img  src={social8}  className="w-8 rounded-full h-auto" alt=""/>
                 <img  src={social7}  className="w-8 rounded-full h-auto" alt=""/>
             </div>
         </div>

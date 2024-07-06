@@ -70,9 +70,10 @@ export default function Footer() {
             whileInView='visible'
             custom={-0.3}
             className="flex flex-col text-xl gap-2">
-                <div className="font-bold">Working hours</div>
-                <div>Monday - Friday: 9:00 - 18:00</div>
-                <div>Saturday - Sunday: 10:00 - 16:00</div>
+                <div className="font-bold">Години роботи</div>
+                {/* <div>Monday - Friday: 9:00 - 18:00</div>
+                <div>Saturday - Sunday: 10:00 - 16:00</div> */}
+                <div>Працюємо без вихідних з 08:00 до 23:00</div>
             </motion.div>
         </div>
     </footer>
