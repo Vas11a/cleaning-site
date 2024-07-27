@@ -41,7 +41,7 @@ export default function Reviews() {
     };
 
     return (
-        <div className="reviews relative w-full pb-10 md:pb-20">
+        <div id='reviews' className="reviews relative w-full pb-10 md:pb-20">
             <motion.img whileHover={{ rotate: 0 }} initial={{ rotate: 45 }}
                 transition={{ duration: 0.4 }} src={back1} className='absolute bottom-56 left-64 -rotate-45 w-32 opacity-50 h-auto' alt="" />
             <motion.img whileHover={{ rotate: 0 }} initial={{ rotate: 45 }}

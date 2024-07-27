@@ -59,7 +59,7 @@ export default function Number() {
                     )
                 }
 
-                <button onClick={submitForm} type="button" className="text-white text-xl xl:text-2xl relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg px-5 py-2.5">Getin touch</button>
+                <button onClick={submitForm} type="button" className="text-white text-xl xl:text-2xl relative z-10 bg-main hover:bg-teal-400 duration-300 focus:ring-4 focus:ring-main font-medium rounded-lg px-5 py-2.5">Хочу замовити</button>
             </div>
         </>
     )

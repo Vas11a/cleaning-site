@@ -70,7 +70,7 @@ export default function Team() {
       };
 
     return (
-        <div className="reviews relative w-full sm:py-10">
+        <div id="team" className="reviews relative w-full sm:py-10">
             <div className='linegrad'></div>
             <motion.h1
                 initial='hidden'

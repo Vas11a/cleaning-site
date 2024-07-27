@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function Questions() {
     const [questions, setQuestions] = React.useState([
         {
-            name: 'Why bla bla blabla blabalal ??',
+            name: 'Прибирання VIP та стандарт - що обрати?',
             description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non laborum magni facere quaerat animi provident, eum eos amet illum quas harum, itaque facilis nihil error consequatur aliquid tenetur quidem? Eveniet ex officiis quae hic? Commodi natus debitis architecto aliquam, porro non amet.',
             isOpen: false
         },
@@ -85,7 +85,7 @@ export default function Questions() {
     };
     return (
 
-        <div className="questions w-full  pt-5 pb-10">
+        <div id='questions' className="questions w-full  pt-5 pb-10">
             <div className='linegrad mt-20'></div>
             <motion.h1
                 initial='hidden'

@@ -137,3 +137,17 @@
     background: rgb(78,172,153);
     background: linear-gradient(90deg, rgba(78,172,153,1) 0%, rgba(255,255,255,1) 98%);
 }
+
+
+::-webkit-scrollbar{
+    @apply w-2
+}
+
+::-webkit-scrollbar-track{
+    @apply bg-gray-200
+}
+
+::-webkit-scrollbar-thumb{
+    border: 2px solid rgb(148 163 184);
+    @apply bg-main cursor-pointer
+}

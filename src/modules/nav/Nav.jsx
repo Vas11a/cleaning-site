@@ -37,49 +37,62 @@ export default function Nav() {
             style={{ zIndex: 100, }}>
             <div className=" flex flex-wrap items-center justify-between mx-auto">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src={logo} className="lg:h-24 h-16" alt=" Logo" />
+                    <img src={logo} className="2xl:h-24 h-16" alt=" Logo" />
                 </a>
-                <img src={menu} alt="X" onClick={() => setIsMenuOpen(!isMenuOpen)} className='w-12 auto cursor-pointer lg:hidden' />
+                <img src={menu} alt="X" onClick={() => setIsMenuOpen(!isMenuOpen)} className='w-12 auto cursor-pointer 2xl:hidden' />
 
                 <div
                     id="nav"
-                    className={`w-full lg:block lg:w-auto ${isMenuOpen ? 'block' : 'hide'}`}>
+                    className={`w-full 2xl:block 2xl:w-auto ${isMenuOpen ? 'block' : 'hide'}`}>
                     <ul
-                        className="font-medium flex flex-col p-4 lg:p-0 mt-4 border items-start lg:items-end gap-5 border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white ">
-                        <div className="flex flex-col lg:flex-row gap-1 lg:gap-10">
-                            <li>
-                                <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-main lg:p-0 ">Додому</a>
+                        className="font-medium flex flex-col p-4 2xl:p-0 mt-4 border items-start 2xl:items-end gap-5 border-gray-100 rounded-lg bg-gray-50 2xl:space-x-8 rtl:space-x-reverse 2xl:mt-0 2xl:border-0 2xl:bg-white ">
+                        <div className="flex flex-col 2xl:flex-row gap-1 2xl:gap-10">
+                            <li onClick={() => setIsMenuOpen(false)}>
+                                <a href="#home"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Додому</a>
                             </li>
-                            <li>
+                            <li onClick={() => setIsMenuOpen(false)}>
 
-                                <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-main lg:p-0 ">Про нас</a>
+                                <a href="#services"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Послуги</a>
                             </li>
-                            <li>
+                            <li onClick={() => setIsMenuOpen(false)}>
 
-                                <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-main lg:p-0 ">Наші сервіси</a>
+                                <a href="#prices"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Наша унікальність</a>
                             </li>
-                            <li>
-                                <a href="/"
-                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-main lg:p-0 ">Ціни</a>
+                            <li onClick={() => setIsMenuOpen(false)}> 
+                                <a href="#questions"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Часті питання</a>
+                            </li>
+                            <li onClick={() => setIsMenuOpen(false)}>
+                                <a href="#reviews"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Відгуки</a>
+                            </li>
+                            <li onClick={() => setIsMenuOpen(false)}>
+                                <a href="#team"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Наша команда</a>
+                            </li>
+                            <li onClick={() => setIsMenuOpen(false)}>
+                                <a href="#contacts"
+                                    className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
+                                    Контакти</a>
                             </li>
                         </div>
                         <div className='flex flex-wrap gap-10 px-3 lg:px-0 items-center'>
                             <div className='flex flex-wrap gap-5 items-center'>
-                                <div className='text-xl '>Менеджер міста: </div>
+                                <div className='text-xl '>Для зв'язку: </div>
                                 <select id="underline_select" onChange={(e) => setCity(e.target.value)} value={city}  className="block px-0 w-fit text-xl  bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer p-2">
-                                    <option value="Kh">Kharkiv</option>
-                                    <option value="Kiev">Kiev</option>
-                                    <option value="Warsaw">Warsaw</option>
-                                    <option value="Krakow">Krakow</option>
+                                    <option value="UA">Україна</option>
                                 </select>
                                 <select id="underline_select"  className="block px-0 w-fit text-xl  bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer p-2">
-                                    <option value="Kh">+380 66636363634</option>
-                                    <option value="Kiev">+380 666805933</option>
-                                    <option value="Warsaw">+ggvpggvpggpv</option>
-                                    <option value="Krakow">+1488 192 22</option>
+                                    <option value="UA">+38(093)09-09-109</option>
                                 </select>
                             </div>
                         

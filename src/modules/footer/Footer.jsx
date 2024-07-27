@@ -36,7 +36,7 @@ export default function Footer() {
         })
     };
   return (
-    <footer className="reviews w-full  pt-5 pb-10">
+    <footer id='contacts' className="reviews w-full  pt-5 pb-10">
         <div className='linegrad mt-20'></div>
             <motion.h1 
             initial='hidden'
