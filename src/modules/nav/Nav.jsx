@@ -50,7 +50,7 @@ export default function Nav() {
                             <li onClick={() => setIsMenuOpen(false)}>
                                 <a href="#home"
                                     className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
-                                    Додому</a>
+                                    Головна</a>
                             </li>
                             <li onClick={() => setIsMenuOpen(false)}>
 

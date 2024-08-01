@@ -43,7 +43,7 @@ export default function Footer() {
             variants={animation2}
             whileInView='visible'
             custom={-0.5}
-            className="title px-5 md:px-20 pt-8  text-main text-4xl sm:text-5xl md:text-6xl py-5">Contacts</motion.h1>
+            className="title px-5 md:px-20 pt-8  text-main text-4xl sm:text-5xl md:text-6xl py-5">Контакти</motion.h1>
         <div className="flex items-center flex-wrap gap-5 lg:gap-20 justify-between pr-5 md:pr-36 px-5 md:px-20 pt-5 sm:pt-10">
             <motion.div 
             initial='hidden'
@@ -59,9 +59,10 @@ export default function Footer() {
             whileInView='visible'
             custom={-0.4}
             className="flex gap-5 ">
-                <img src={social1} className="w-10 h-auto cursor-pointer" alt=""/>
-                <img src={social2} className="w-10 h-auto cursor-pointer" alt=""/>
-                <img src={social3} className="w-10 h-auto cursor-pointer" alt=""/>
+                {/* <img src={social1} className="w-10 h-auto cursor-pointer" alt=""/> */}
+                <a target='blank' href="https://www.instagram.com/ad_clavum?igsh=MTFvZ2p0MWc3M2J2dg%3D%3D&utm_source=qr"><img src={social2} className="w-10 h-auto cursor-pointer" alt=""/></a>
+                <a target='blank' href=" mailto:adclavumcleaning@gmail.com"><img src={social3} className="w-10 h-auto cursor-pointer" alt=""/></a>
+                
             </motion.div>
 
             <motion.div 
