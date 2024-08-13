@@ -1,5 +1,5 @@
 import React from 'react'
-import linda2 from '../../assets/linda1.png'
+import linda2 from '../../assets/linda/linda1.png'
 import Question from './Question'
 import './questions.css'
 import { motion } from 'framer-motion'

@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 import back1 from '../../assets/back3.png'
 import back2 from '../../assets/back5.png'
 import back3 from '../../assets/back2.2.png'
-
-import ba1_1 from '../../assets/ba1.1.PNG'
-import ba1_2 from '../../assets/ba1.2.PNG'
-import ba1_3 from '../../assets/ba1.3.PNG'
-import ba1_4 from '../../assets/ba1.4.PNG'
-import ba1_5 from '../../assets/ba1.5.PNG'
+import qr from '../../assets/qr.png'
+import ba1_1 from '../../assets/reviews/ba1.1-min.PNG'
+import ba1_2 from '../../assets/reviews/ba1.2-min.PNG'
+import ba1_3 from '../../assets/reviews/ba1.3-min.PNG'
+import ba1_4 from '../../assets/reviews/ba1.4-min.PNG'
+import ba1_5 from '../../assets/reviews/ba1.5-min.PNG'
 import './reviews.css'
 
 
@@ -67,12 +67,15 @@ export default function Reviews() {
                 whileInView='visible'
                 custom={-0.5}
                 className="title px-5 md:px-20 pt-8   text-main text-4xl sm:text-5xl md:text-6xl py-5">Відгуки</motion.h1>
+            <div className='flex justify-center sm:pt-20 sm:pb-20'>
             <motion.div
                 initial='hidden'
                 variants={animation2}
                 whileInView='visible'
                 custom={-0.5}
-                className=" bg-cyan-200 slider md:w-700 md:h-72 xl:h-96  rounded-md mx-auto my-5 md:my-20 relative">
+                className=' h-64 sm:h-80 mx-auto xl:m-0 w-full xl:w-4/5'
+                style={{ maxWidth: '600px', width: '90%', }}
+                >
                 <Carousel>
                     {/* <Review /> */}
                     
@@ -86,8 +89,12 @@ export default function Reviews() {
                 </Carousel>
 
             </motion.div>
-            <div className="pt-8 text-center text-xl font-semibold lg:-mt-10">
-                {/* You can write your fitback <span className="text-main cursor-pointer">here)</span> */}
+            </div>
+            <div className="sm:pt-8 text-center text-xl font-semibold lg:-mt-10">
+                Телеграм канал з нашими <a href='https://t.me/adclavumreviews' target='blank' className="text-main cursor-pointer">відгуками</a>
+            </div>
+            <div className='flex justify-center'>
+                <img src={qr} className='w-32 h-32' alt="" />
             </div>
         </div>
     )

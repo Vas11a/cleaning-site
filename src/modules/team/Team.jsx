@@ -4,10 +4,10 @@ import loca from '../../assets/loca.svg'
 import alina from '../../assets/alina.JPG'
 
 const KV = [{
-    name: 'Тут буде ім`я',
+    name: 'Афоніна Оксана Валентинівна',
     pos: 'Директор',
     image: '',
-    tekst: 'Якійсь опис'
+    tekst: 'Афоніна Оксана Валентинівна - Директор'
 }, {
     name: 'Ляшенко Аліна Сергіївна',
     pos: 'Заступник директора',
@@ -15,23 +15,23 @@ const KV = [{
     tekst: 'Ляшенко Аліна Сергіївна - Заступник директора'
 },
 {
-    name: 'Тут буде ім`я',
+    name: 'Руденко Анна Володимирівна',
     pos: 'Керівник',
     image: '',
-    tekst: 'Якійсь опис'
+    tekst: 'Досвід роботи: 3 роки'
 },
 {
-    name: 'Тут буде ім`я',
+    name: 'Власюк Галина Володимирівна',
     pos: 'Менеджер систем якості',
     image: '',
-    tekst: 'Якійсь опис'
+    tekst: 'Досвід роботи: 5 років'
 }]
 
 const KH = [{
-    name: 'Тут буде ім`я',
+    name: 'Афоніна Оксана Валентинівна',
     pos: 'Директор',
     image: '',
-    tekst: 'Якійсь опис'
+    tekst: 'Афоніна Оксана Валентинівна - Директор'
 }, {
     name: 'Ляшенко Аліна Сергіївна',
     pos: 'Заступник директора',
@@ -39,16 +39,16 @@ const KH = [{
     tekst: 'Ляшенко Аліна Сергіївна - Заступник директора'
 },
 {
-    name: 'Тут буде ім`я',
+    name: 'Кісь Наталя Валентинівна',
     pos: 'Керівник',
     image: '',
-    tekst: 'Якійсь опис'
+    tekst: 'Досвід роботи: 16 років' 
 },
 {
-    name: 'Тут буде ім`я',
+    name: 'Самойленко Ірина Віталіївна',
     pos: 'Менеджер систем якості',
     image: '',
-    tekst: 'Якійсь опис'
+    tekst: 'Досвід роботи: 4 роки'
 }]
 
 export default function Team() {
@@ -167,7 +167,7 @@ export default function Team() {
                             team[current].image !== '' ? (
                                 <img src={team[current].image} alt="" className=' w-20 h-20 lg:w-32 lg:h-32 rounded-full' />
                             ) : (
-                                <div className='w-20 h-20 bg-blue-300 rounded-full'></div>
+                                <div className='w-20 h-20 lg:w-32 lg:h-32 bg-blue-300 rounded-full'></div>
                             )
                         }
                         

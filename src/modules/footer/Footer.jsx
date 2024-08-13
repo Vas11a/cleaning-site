@@ -1,9 +1,10 @@
 import React from 'react'
-import social1 from '../../assets/social1.svg'
+import tg from '../../assets/tds.svg'
 import social2 from '../../assets/social2.svg'
 import social3 from '../../assets/social3.svg'
 import { motion } from 'framer-motion';
 import Number from '../main/Number';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     const animation = {
@@ -62,6 +63,7 @@ export default function Footer() {
                 {/* <img src={social1} className="w-10 h-auto cursor-pointer" alt=""/> */}
                 <a target='blank' href="https://www.instagram.com/ad_clavum?igsh=MTFvZ2p0MWc3M2J2dg%3D%3D&utm_source=qr"><img src={social2} className="w-10 h-auto cursor-pointer" alt=""/></a>
                 <a target='blank' href=" mailto:adclavumcleaning@gmail.com"><img src={social3} className="w-10 h-auto cursor-pointer" alt=""/></a>
+                <a target='blank' href=" https://t.me/adclavum_cleaning"><img src={tg} className="w-10 h-auto cursor-pointer" alt=""/></a>
                 
             </motion.div>
 
@@ -76,7 +78,14 @@ export default function Footer() {
                 <div>Saturday - Sunday: 10:00 - 16:00</div> */}
                 <div>Працюємо без вихідних з 08:00 до 23:00</div>
             </motion.div>
+            
         </div>
+        <div className='flex items-center flex-wrap gap-5 lg:gap-20 pr-5 md:pr-36 px-5 md:px-20 pt-5 sm:pt-10'>
+            <Link to={'/privacy-policy'} className='text-main font-bold text-xl'>Privacy Policy</Link>
+            <Link to={'/user-agreement'} className='text-main font-bold text-xl'>User Agreement</Link>
+            <Link to={'/contract'} className='text-main font-bold text-xl'>Contract</Link>
+        </div>
+        
     </footer>
   )
 }

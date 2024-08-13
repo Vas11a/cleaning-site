@@ -21,7 +21,7 @@ export default function Number() {
         }
         setIsLoading(true)
         try {
-            const res = await axios.post('http://localhost:3001/sendNumber', { number })
+            const res = await axios.post('https://adclavum.com/bot/sendNumber', { number })
             console.log(res.data);
             setIsSuccess(true)
             setTimeout(() => setIsSuccess(false), 2000)

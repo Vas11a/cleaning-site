@@ -2,15 +2,11 @@ import React from 'react'
 import logo from '../../assets/logo1.png'
 import { motion } from 'framer-motion'
 import menu from '../../assets/menu.svg'
-import loca from '../../assets/loca.svg'
 
 export default function Nav() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false)
     const [hasScrolled, setHasScrolled] = React.useState(false);
     const [city, setCity] = React.useState('Kharkiv')
-    React.useEffect(() => {
-        console.log(city);
-    }, [city])
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -77,7 +73,7 @@ export default function Nav() {
                             <li onClick={() => setIsMenuOpen(false)}>
                                 <a href="#team"
                                     className="block duration-300 py-2 px-3 text-xl xl:text-2xl  text-gray-900 rounded hover:bg-gray-100 2xl:hover:bg-transparent 2xl:border-0 2xl:hover:text-main 2xl:p-0 ">
-                                    Наша команда</a>
+                                    Колектив</a>
                             </li>
                             <li onClick={() => setIsMenuOpen(false)}>
                                 <a href="#contacts"

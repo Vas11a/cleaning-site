@@ -157,7 +157,7 @@ export default function Services() {
     },
     {
         id: 8,
-        name: 'Додаткові послуги',
+        name: 'Вартість та додаткові послуги',
         photos: [],
         information:  [
         ],
@@ -165,11 +165,12 @@ export default function Services() {
     },
     {
         id: 9,
-        name: 'Чистота домівки «під ключ»',
+        name: '«Чистота домівки під ключ»',
+        subName: 'Одна із авторських послуг нашої компанії для підтримання чистоти домівки напротязі всього року',
         photos: [],
         information:  [
             ["Одна із авторських послуг нашої компанії, яка дозволяє Вам насолоджуватись життям і не витрачати свій час на рутинний догляд за домівкою на протязі всього року.",
-            "«Чистота домівки під ключ» - це багатофункціональна послуга, яка розробляється індивідуально під кожну квартиру, дім та будь-яке приміщення комерційного типу. "]
+            "«Чистота домівки під ключ» - це багатофункціональна послуга, яка розробляється індивідуально під кожну квартиру, дім або будь-яке приміщення комерційного типу. "]
         ],
         price: '87 800',
         year: true
@@ -178,7 +179,7 @@ export default function Services() {
     const [selectedService, setSelectedService] = useState(serviceList[0]);
 
     const handlePopup = (idx) => {
-        serviceRef.current.scrollIntoView({ behavior: 'smooth' });
+        serviceRef.current.scrollIntoView();
 
         setSelectedService(serviceList[idx]);
     };
@@ -271,7 +272,7 @@ export default function Services() {
                     variants={animation}
                     custom={-0.2}
                     className="flex w-full sm:w-fit gap-5 md:gap-20">
-                        <Service title='Додаткові послуги' text='' setIsPannelOpen={() => handlePopup(8)} />
+                        <Service title='Вартість та додаткові послуги' text='' setIsPannelOpen={() => handlePopup(8)} />
                         <Service title='«Чистота домівки під ключ»' text='' setIsPannelOpen={() => handlePopup(9)} />
                     </motion.div>
                 </div>

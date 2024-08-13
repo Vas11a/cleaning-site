@@ -1,5 +1,5 @@
 import React from 'react'
-import linda from '../../assets/linda2.png'
+import linda from '../../assets/linda/linda2.png'
 import bubles3 from '../../assets/BUBLES3.jpg'
 import { motion } from 'framer-motion'
 import Number from './Number'
