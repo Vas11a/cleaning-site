@@ -13,7 +13,7 @@ export default function Call() {
     <div className="floatingButton flex gap-3 sm:gap-7 items-center">
         <div style={{width: isOpen ? '230px' : '0', border: isOpen ? '1px solid #4eac99' : 'none'}}
             className="socBlock border  duration-500 overflow-hidden rounded-md py-2 sm:py-5 bg-white flex flex-col gap-3 items-center">
-            <div className="text-xl font-semibold">+380930909109</div>
+            <a href='tel:+380930909090' className="text-xl font-semibold">+380930909109</a>
             <div className="flex gap-3">
               {/* <a target='blank' href="+380930909109">
                 <img src={social4}  className="w-8 rounded-full h-auto" alt=""/>

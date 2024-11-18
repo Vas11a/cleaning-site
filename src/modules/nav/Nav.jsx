@@ -87,9 +87,7 @@ export default function Nav() {
                                 <select id="underline_select" onChange={(e) => setCity(e.target.value)} value={city}  className="block px-0 w-fit text-xl  bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer p-2">
                                     <option value="UA">Україна</option>
                                 </select>
-                                <select id="underline_select"  className="block px-0 w-fit text-xl  bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer p-2">
-                                    <option value="UA">+38(093)09-09-109</option>
-                                </select>
+                                <a className="block px-0 w-fit text-xl  bg-transparent border-0 border-b-2 border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200 peer p-2" href='tel:+380930909090' value="UA">+38(093)09-09-109</a>
                             </div>
                         
 

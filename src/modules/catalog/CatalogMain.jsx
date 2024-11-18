@@ -2,6 +2,7 @@ import React from 'react'
 import NavCatalog from './NavCatalog'
 import CatalogHome from './CatalogHome'
 import PriceElement from './PriceElement'
+import Up from './Up'
 
 export default function CatalogMain({data}) {
   return (
@@ -12,6 +13,7 @@ export default function CatalogMain({data}) {
           <PriceElement/>
           <PriceElement/>
         </div>
+        <Up/>
     </>
   )
 }

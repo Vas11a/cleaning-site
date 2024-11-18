@@ -10,11 +10,12 @@ export default function NavCatalog() {
         <motion.div
             initial={{ y: '-100vh' }}
             animate={{ y: 0 }}
+            id='catalog_home'
             transition={{ type: 'spring', stiffness: 120, damping: 20 }}
             className='p-2 py-6 sm:p-6 flex gap-2 justify-between items-center'>
             <Link to='/' className='flex gap-1.5 sm:gap-4 items-center sm:border-b sm:border-main cursor-pointer sm:pb-3'>
                 <img src={back_arr} className=" w-8 sm:w-10 h-auto" alt="" />
-                <div className="text-xl sm:text-3xl font-semibold text-main">На головну <span className='hidden sm:inline'>сторінку</span></div>
+                <div className="text-2xl sm:text-3xl font-semibold text-main">На головну <span className='hidden sm:inline'>сторінку</span></div>
             </Link>
             <Link to='/'>
                 <img src={logo} className=" w-36 sm:w-44 h-auto" alt="" />

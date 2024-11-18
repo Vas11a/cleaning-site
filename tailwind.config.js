@@ -10,6 +10,9 @@ module.exports = {
       colors:{
         main: '#4eac99'
       },
+      borderWidth: {
+        '3': '3px',
+      },
       width: {
         '500': '500px',
         '700': '700px',
